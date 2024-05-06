@@ -23,16 +23,17 @@ TailwindCSS
 TypeScript
 
 Back end:
-Express
-Node
-Axios
-Bcrypt
-Jsonwebtoken
-Mongoose
-TypeScript
+- Express
+- Node
+- Axios
+- Bcrypt
+- Jsonwebtoken
+- Mongoose
+- TypeScript
 I have included snippets of what your package file should look like in. The first image is back end, and the second is front end:
 
-
+![Back End package.lock](https://i.imgur.com/VfgSUg0.png)
+![Front End package.lock](https://i.imgur.com/Y7OyTsK.png)
 
 
 You will likely need to have your own mongodb database up and running, and then to seed the data in order to get this working as intended.
@@ -118,6 +119,8 @@ The basic formatting of backend into components, controllers and router was very
 Once we had assembled our components, testing was necessary to make sure it all fit together correctly, firstly the dev in the driver’s seat would seed the mongodb database. It is unnecessary for all 3 of us to test independently at this point despite the fortified testing it would provide. 
 We used an app called insomnia to test all possible requests to our back end including tips (our main dataset) and users.
 
+![Back End Router](https://i.imgur.com/gRFFVa9.png)
+
 Insomnia proved to be a very useful tool, after testing was complete and we were satisfied with the functional back end, we then pressed on to the front end.
 
 For the front end, we decided to use a new CSS framework technology TailwindCSS. This was an ambitious move chosen to display our ability to learn a new and industry recommended technology. Previously we had been using an alternative CSS framework - BulmaCSS.
@@ -140,6 +143,8 @@ Edit their posted advice
 Delete their posted advice
 Edit their account information
 
+![Logged in Example](https://i.imgur.com/xTwfKIX.png)
+
 Only when logged in does the option to give advice present itself.
 
 Feel free to sign in via the live site using the following details and see the user/ visitor distinction yourself:
@@ -153,10 +158,16 @@ I am particularly proud of the error handling here because it is dynamic and res
 If you missed a required field or needed to adjust your password to contain particular characters, you would be prompted to do so.
 Only when you have met the requirements would it let you sign up.
 
+![Sign Up Error Handling](https://i.imgur.com/WgnViOc.png)
 
+![User Controller](https://i.imgur.com/Ty1DX0q.png)
+
+![Sign Up Front End](https://i.imgur.com/pWaKxhH.png)
 
 
 The advice page is clean with a soothing colour scheme:
+
+![Advice Page Visual](https://i.imgur.com/LjjsDaZ.png)
 
 A search bar is also available should you wish to filter the results, it can include any words mentioned throughout the advice from name to the advice content.
 
