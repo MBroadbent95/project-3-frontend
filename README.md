@@ -45,7 +45,8 @@ If you have successfully completed my steps, you should have a working preview b
 
 Timeframe & Working Team (Solo/Pair/Group):
 
-The timeframe for this project was just under 8 days if you include the weekend. I was in a 3 person group consisting of 2 ambitious and hard working teammates Conor Hamilton and Catherine Brett.
+The timeframe for this project was just under 8 days if you include the weekend. I was in a 3 person group consisting of 2 ambitious and hard working teammates Conor Hamilton and Catherine Brett.Every morning we would have a meeting to discuss the plan of action for the day and who would do each task.
+
 
 
 Technologies Used:
@@ -102,8 +103,8 @@ Instructions:
 Planning:
 
 Planning is essential in order to complete a task as potentially complex as this one.
-We knew from the outset that the more time we spent in the beginning chiselling out exactly what we wanted, the path to achieving it would be more clear and easier to travel.
-We devised comprehensive wire-frames for both the front and back end’s of the project using an app called Excalidraw, below is the FE wireframe preview:
+We knew from the outset that the more time we spent in the beginning chiseling out exactly what we wanted, the path to achieving it would be more clear and easier to travel.
+We devised comprehensive wire-frames for both the front and back end of the project using an app called Excalidraw, below is the FE wireframe preview:
 
 ![Front End WireFrame](https://i.imgur.com/FyznxnK.png)
 Here is the backend wireframe preview:
@@ -115,6 +116,8 @@ Here is the backend wireframe preview:
 Build/Code Process:
 
 It was apparent that the best place to start for our full stack project would be the back end. Once everything is functional in the back end, the front end should be far easier to build when the data is visible.
+
+Back End:
 The basic formatting of backend into components, controllers and router was very useful for us. We started to divvy out who would be writing which components. This was an effective practice as we would avoid potential merge conflicts by staying clear of each other's files. Should we need to make adjustments, we would notify our team in slack with full details of the changes we made.
 Once we had assembled our components, testing was necessary to make sure it all fit together correctly, firstly the dev in the driver’s seat would seed the mongodb database. It is unnecessary for all 3 of us to test independently at this point despite the fortified testing it would provide. 
 We used an app called insomnia to test all possible requests to our back end including tips (our main dataset) and users.
@@ -123,14 +126,15 @@ We used an app called insomnia to test all possible requests to our back end inc
 
 Insomnia proved to be a very useful tool, after testing was complete and we were satisfied with the functional back end, we then pressed on to the front end.
 
-For the front end, we decided to use a new CSS framework technology TailwindCSS. This was an ambitious move chosen to display our ability to learn a new and industry recommended technology. Previously we had been using an alternative CSS framework - BulmaCSS.
+Front end:
+For the front end, we decided to use a new CSS framework technology TailwindCSS. This was an ambitious move chosen to display the ability to learn a new and industry recommended technology. Previously we had been using an alternative CSS framework - BulmaCSS.
 TailwindCSS proved to be a far more useful tool in its application by the precision and multitude of options it provided when compared to BulmaCSS, we could simply do a whole lot more with TailwindCSS.
-The only real downside to TailwindCSS besides the evident learning curve was how messy it would make your HTML work… a worthy sacrifice.
+The only real downside to TailwindCSS besides the evident learning curve was how messy it would make your HTML look… a worthy sacrifice.
 
 We knew what we wanted to achieve in the frontend thanks to our planning stage.
-We would require a smooth user experience with each page presenting a defined purpose for the user and their interaction with the data and other users.
+This would require a smooth user experience with each page presenting a defined purpose for the user and their interaction with the data and other users.
 For this we would need a clean distinction between visitor and user.
-The core of our website, Tips for fellow software travellers, would fail if we denied access to visitors.
+The core of our website, Tips for fellow software travelers, would fail if we denied access to visitors.
 So in essence visitors could:
 View Advice
 Search for advice based on their search criteria.
@@ -165,7 +169,7 @@ Only when you have met the requirements would it let you sign up.
 ![Sign Up Front End](https://i.imgur.com/pWaKxhH.png)
 
 
-The advice page is clean with a soothing colour scheme:
+The advice page is clean with a soothing color scheme:
 
 ![Advice Page Visual](https://i.imgur.com/LjjsDaZ.png)
 
@@ -183,7 +187,7 @@ Coordination/ Project Management
 In the beginning we were using a new way of managing our group operations - Trello. 
 We were recommended Trello from our instructors as a straightforward method of project management, you could create cards which could be freely moved to indicate which stage your task was at - testing/ code review/ done. 
 This worked for a brief period when development was in its early build stages as what needed to be done was much more clear and easier to divvy out.
-But it became cumbersome to organise tasks via Trello when it was a faster and more dynamic system via Slack and merge parties . 
+But it became cumbersome to organize tasks via Trello when it was a faster and more dynamic system via Slack and merge parties . 
 We would reconvene after agreed upon blocks of time, discuss our progress, merge our work and then issue new tasks.
 This new system worked much better for us when it came to debugging and adjusting features as required when a bug would appear or not work as intended.
 
@@ -209,10 +213,10 @@ I am happy that I am able to contribute and work effectively as part of a team.
 
 Key Learnings/Takeaways:
 
-I feel far more confident using the new CSS framework TailwindCSS. In the future I can imagine learning new technologies and utilising them effectively will be a part of my job. It is great to know that I am adaptable in this regard.
+I feel far more confident using the new CSS framework TailwindCSS. In the future I can imagine learning new technologies and utilizing them effectively will be a part of my job. It is great to know that I am adaptable in this regard.
 
-In my last project, it was mostly pair programming when we were both online simultaneously. For this project i needed to understand the dynamics of working in a team, in which we would be developing separate working parts of the project and how best to integrate my work.
-From my experience on this project i can confidently assert that i have gained valuable practice working as a cohesive team to effectively develop a smooth, clean and functional app.
+In my last project, it was mostly pair programming when we were both online simultaneously. For this project I needed to understand the dynamics of working in a team, in which we would be developing separate working parts of the project and how best to integrate my work.
+From my experience on this project I can confidently assert that I have gained valuable practice working as a cohesive team to effectively develop a smooth, clean and functional app.
 
 
 
@@ -220,14 +224,12 @@ Bugs:
 
 A bug we encountered and couldn’t find a fix for in time was related to the browser url bar.
 More specifically, if you are specific with what you enter into the url bar, you can successfully navigate to the edit page of a specified piece of advice.
-The way in which the edit function was crafted, was to navigate to a new page and edit the advice based on it’s id. Whilst we couldn’t figure out a way to block everyone except the creator of the advice from finding their way to the page if they really wanted to, they still cannot edit the advice unless their id matches the one registered on the tip.
+The way in which the edit function was crafted, was to navigate to a new page and edit the advice based on its id. Whilst we couldn’t figure out a way to block everyone except the creator of the advice from finding their way to the page if they really wanted to, they still cannot edit the advice unless their id matches the one registered on the tip.
 
 
 Future Improvements:
 
 We had a handful of improvements we would make had we more time to implement them, these include:
 A comments/ likes system. This would be beneficial to encourage more active engagement between users on the website and would provide more means by which to filter the data based on direct user feedback.
-A favourites list. You would need to be logged in, but a means of favoriting advice and storing it so that you can revisit it on a later date would encourage further positive UX stories.
+A favorites list. You would need to be logged in, but a means of favoriting advice and storing it so that you can revisit it on a later date would encourage further positive UX stories.
 Expanded user profile. Most social websites feature far more depth in their user profiles. We could only program the ability to edit your profile data but there is a minimum experience users expect these days including features like profile picture, cookie/ data management, delete profile/ account. The possibilities are endless and we only scratched the surface here.
-
-
