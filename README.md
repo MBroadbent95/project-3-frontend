@@ -1,26 +1,19 @@
-Bootcamp Buddy
+# Bootcamp Buddy
 
-Description:
+A full-stack MERN application where software engineering 
+students share and discover peer advice. Built by a team 
+of 3 in an 8-day sprint with full CRUD, JWT authentication, 
+and role-based access for visitors vs. registered users.
 
-Project 3 - Bootcamp-Buddy: For our 3rd project we were placed in teams of 2-3 and tasked to create a full stack MERN (Mongodb, Express, React, Node) app with CRUD (Create, Read, Update, Delete) functionality.
-Our idea was “Bootcamp-Buddy”, an online platform where you can read relevant advice from students about anything and everything software engineering.
-For deployment, we used a combination of Netlify for the front and back end, and then Mongo Atlas for the database.
+🔗 [Live App](https://bootcamp-buddy.netlify.app/) | 
+[Frontend Repo](https://github.com/MBroadbent95/project-3-frontend) | 
+[Backend Repo](https://github.com/MBroadbent95/project-3-backend)
 
-Deployment link
-
-https://bootcamp-buddy.netlify.app/
-
-
-Getting Started/Code Installation:
-
-Feel free to access my code from my GitHub repository
-Front end - https://github.com/MBroadbent95/project-3-frontend
-Back end - https://github.com/MBroadbent95/project-3-backend
-Necessary Front end installations for this code are as follows:
-React
-Axios
-TailwindCSS
-TypeScript
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![Node](https://img.shields.io/badge/Node-Express-green)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-brightgreen)
+![TypeScript](https://img.shields.io/badge/TypeScript-Typed-blue)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styled-teal)
 
 Back end:
 - Express
@@ -84,7 +77,28 @@ Mongo Atlas
 Google Chrome Dev Tools
 
 
+## Technical Decisions
 
+- **Separated frontend and backend repos** — decoupled 
+  deployment allowed independent Netlify builds for each 
+  service, making it easier to debug and redeploy without 
+  affecting the other.
+- **JWT authentication over session-based auth** — chose 
+  stateless JWT tokens to keep the backend API clean and 
+  scalable, with bcrypt handling password hashing on the 
+  user model.
+- **TailwindCSS over BulmaCSS** — deliberately adopted 
+  an unfamiliar framework mid-project to demonstrate 
+  adaptability; utility-first classes gave finer control 
+  over layout and spacing than Bulma's component model.
+- **Role-based UI rendering** — visitor vs. authenticated 
+  user states handled in React, conditionally rendering 
+  the "Give Advice" CTA and edit/delete controls based on 
+  token presence and matching user ID.
+- **File-level task splitting to avoid merge conflicts** — 
+  team agreed upfront on component ownership so each 
+  developer worked in separate files, with Slack 
+  notifications before any shared file was touched.
 
 
 Brief
@@ -151,11 +165,8 @@ Edit their account information
 
 Only when logged in does the option to give advice present itself.
 
-Feel free to sign in via the live site using the following details and see the user/ visitor distinction yourself:
-Email: a.user@bootcampbuddy.com
-Password: M@tb0okbike
-
-Should you choose to sign up a new account, please feel free to do so.
+A demo account is available on request, or feel free 
+to register a new account directly on the live site.
 
 If you navigate to the log-in page, much like other popular social media apps Instagram & Facebook, you can navigate to a new page to sign up if you don’t already have an account.
 I am particularly proud of the error handling here because it is dynamic and responds with specific error messages in the commonly expected format. 
@@ -180,21 +191,19 @@ We wanted this experience to include the opportunity to connect and network for 
 
 
 
-Challenges:
+## Challenges
 
-We encountered a handful of challenges throughout our project development.
-Coordination/ Project Management
-In the beginning we were using a new way of managing our group operations - Trello. 
-We were recommended Trello from our instructors as a straightforward method of project management, you could create cards which could be freely moved to indicate which stage your task was at - testing/ code review/ done. 
-This worked for a brief period when development was in its early build stages as what needed to be done was much more clear and easier to divvy out.
-But it became cumbersome to organize tasks via Trello when it was a faster and more dynamic system via Slack and merge parties . 
-We would reconvene after agreed upon blocks of time, discuss our progress, merge our work and then issue new tasks.
-This new system worked much better for us when it came to debugging and adjusting features as required when a bug would appear or not work as intended.
+**Adapting project management mid-sprint** — we started 
+with Trello but found it too static once development 
+became fluid. We switched to a Slack-based standup model 
+with scheduled merge parties, which reduced coordination 
+overhead and let us respond faster to bugs as they emerged.
 
-
-Throughout the project we would debug as we went along. The strength of this is that the context of the bug would be apparent far more quicker and usually could be resolved much faster.
-The con of such a method is that it took us longer than expected to achieve our MVP which caused some frustration among the group, that we were falling behind and would end up with a sub-par app.  
-Project management and team cohesion aside, I probably would recommend the more steadfast approach as very few of our features encountered any meaningful bugs which weren’t debugged that same day.
+**URL-based authorisation gap** — a known issue where a 
+direct URL could expose the edit page for any tip. We 
+implemented server-side ID matching so the edit action 
+itself is protected regardless of how the page is reached, 
+though frontend route-guarding remains a planned improvement.
 
 
 
@@ -211,12 +220,17 @@ I am happy that I am able to contribute and work effectively as part of a team.
 
 
 
-Key Learnings/Takeaways:
+## Key Learnings
 
-I feel far more confident using the new CSS framework TailwindCSS. In the future I can imagine learning new technologies and utilizing them effectively will be a part of my job. It is great to know that I am adaptable in this regard.
-
-In my last project, it was mostly pair programming when we were both online simultaneously. For this project I needed to understand the dynamics of working in a team, in which we would be developing separate working parts of the project and how best to integrate my work.
-From my experience on this project I can confidently assert that I have gained valuable practice working as a cohesive team to effectively develop a smooth, clean and functional app.
+- Adopted TailwindCSS cold mid-project and shipped with 
+  it — confirmed I can pick up new tooling under deadline 
+  pressure without it blocking delivery.
+- Learned that clear file ownership is more effective 
+  than trying to coordinate edits to shared files — 
+  something I'd formalise earlier on a future project.
+- Reading and extending a teammate's code (the LinkedIn/
+  GitHub button fix) reinforced why legible, consistent 
+  code matters as much as correctness.
 
 
 
@@ -227,9 +241,11 @@ More specifically, if you are specific with what you enter into the url bar, you
 The way in which the edit function was crafted, was to navigate to a new page and edit the advice based on its id. Whilst we couldn’t figure out a way to block everyone except the creator of the advice from finding their way to the page if they really wanted to, they still cannot edit the advice unless their id matches the one registered on the tip.
 
 
-Future Improvements:
+## Roadmap
 
-We had a handful of improvements we would make had we more time to implement them, these include:
-A comments/ likes system. This would be beneficial to encourage more active engagement between users on the website and would provide more means by which to filter the data based on direct user feedback.
-A favorites list. You would need to be logged in, but a means of favoriting advice and storing it so that you can revisit it on a later date would encourage further positive UX stories.
-Expanded user profile. Most social websites feature far more depth in their user profiles. We could only program the ability to edit your profile data but there is a minimum experience users expect these days including features like profile picture, cookie/ data management, delete profile/ account. The possibilities are endless and we only scratched the surface here.
+- [ ] Comments and likes system per advice post
+- [ ] Saved/favourites list for logged-in users  
+- [ ] Frontend route guards to prevent unauthorised 
+      access to edit pages via direct URL
+- [ ] Profile picture upload and expanded user profile
+- [ ] Account deletion flow
