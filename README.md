@@ -5,7 +5,7 @@ students share and discover peer advice. Built by a team
 of 3 in an 8-day sprint with full CRUD, JWT authentication, 
 and role-based access for visitors vs. registered users.
 
-🔗 [Live App](https://bootcamp-buddy.netlify.app/) | 
+🔗 [Live App](https://bootcamp-buddyv2.netlify.app) | 
 [Frontend Repo](https://github.com/MBroadbent95/project-3-frontend) | 
 [Backend Repo](https://github.com/MBroadbent95/project-3-backend)
 
